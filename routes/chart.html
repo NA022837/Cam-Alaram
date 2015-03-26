@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello ZingChart World</title>
+<style type="text/css">
+        #chartdiv {
+	   width		: 100%;
+	   height		: 600px;
+	   font-size	: 5px;
+        }
+       #chartdiv a {
+           font-size: 0!important;
+       }
+</style>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/none.js"></script>
+
+<script>var chart = AmCharts.makeChart("chartdiv", {
+   "type": "serial",
+    "theme": "none",
+     "pathToImages":"http://www.amcharts.com/lib/3/images/",
+    "dataProvider": 
+[ { client: 'FMC_GA', Alarams: 2 },
+  { client: 'ADHA_AE', Alarams: 3 },
+  { client: 'THCH2_TX', Alarams: 2 },
+  { client: 'CERN_IS', Alarams: 5 },
+  { client: 'UNVR_NY', Alarams: 6 },
+  { client: 'IEHN_AU', Alarams: 2 },
+  { client: 'LHSC_CD', Alarams: 1 },
+  { client: 'LCOX_MO', Alarams: 2 },
+  { client: 'CERN_RWX', Alarams: 1 },
+  { client: 'UNIV_UT', Alarams: 1 },
+  { client: 'CPHY_PR', Alarams: 4 },
+  { client: 'OHC_OK', Alarams: 2 },
+  { client: 'THCH6_TX', Alarams: 6 },
+  { client: 'CERN_OLYM', Alarams: 1 },
+  { client: 'CERN_BNSM', Alarams: 1 },
+  { client: 'TORR_CA', Alarams: 1 },
+  { client: 'BH_AL', Alarams: 4 },
+  { client: 'AHKZ_MI', Alarams: 1 },
+  { client: 'STVN_NM', Alarams: 1 },
+  { client: 'CHWB_CA', Alarams: 1 },
+  { client: 'CPHYB_PR', Alarams: 6 },
+  { client: 'PALO_CA', Alarams: 6 },
+  { client: 'VAIL_CO', Alarams: 2 },
+  { client: 'THCH5_TX', Alarams: 3 },
+  { client: 'NMHS_NE', Alarams: 3 },
+  { client: 'BRMC_IA', Alarams: 1 },
+  { client: 'HLTH_FX', Alarams: 1 },
+  { client: 'CHI_CO', Alarams: 1 },
+  { client: 'LOMA_CA', Alarams: 1 },
+  { client: 'STVN_FL', Alarams: 1 },
+  { client: 'EJEF_LA', Alarams: 1 },
+  { client: 'GCMH_NM', Alarams: 1 },
+  { client: 'CERN_HIE', Alarams: 1 },
+  { client: 'WRMC_AR', Alarams: 1 },
+  { client: 'MCGH_GA', Alarams: 1 },
+  { client: 'AHTU_AZ', Alarams: 5 },
+  { client: 'PAND_ML', Alarams: 1 },
+  { client: 'AHSW_CA', Alarams: 2 },
+  { client: 'LOWE_MA', Alarams: 1 },
+  { client: 'SGEN_OH', Alarams: 1 },
+  { client: 'TASP_MO', Alarams: 16 },
+  { client: 'MCVH_VA', Alarams: 1 },
+  { client: 'USC_CA', Alarams: 7 },
+  { client: 'STJU_TN', Alarams: 2 },
+  { client: 'MEML_TX', Alarams: 1 },
+  { client: 'MERC_UN', Alarams: 1 },
+  { client: 'HENN_MN', Alarams: 1 },
+  { client: 'CHLD_DC', Alarams: 1 },
+  { client: 'NAPL_FL', Alarams: 1 },
+  { client: 'CERN_COMC', Alarams: 1 },
+  { client: 'YUKO_AK', Alarams: 2 },
+  { client: 'CHSI_TN', Alarams: 12 },
+  { client: 'UHS_PA', Alarams: 5 },
+  { client: 'TMMC_FL', Alarams: 1 },
+  { client: 'LAC_CA', Alarams: 3 },
+  { client: 'NBHS_CA', Alarams: 1 },
+  { client: 'NRTH_IL', Alarams: 2 },
+  { client: 'SACH_CA', Alarams: 1 },
+  { client: 'FLHO_FL', Alarams: 1 },
+  { client: 'IHC_UT', Alarams: 2 },
+  { client: 'TRUM_MO', Alarams: 1 },
+  { client: 'STCL_NJ', Alarams: 2 },
+  { client: 'CERN_EMPL', Alarams: 2 },
+  { client: 'NHS_DE', Alarams: 2 },
+  { client: 'CARE_RI', Alarams: 1 },
+  { client: 'LGCY_OR', Alarams: 1 },
+  { client: 'BAYC_FL', Alarams: 1 },
+  { client: 'WATR_CT', Alarams: 1 },
+  { client: 'CHLD_MN', Alarams: 1 },
+  { client: 'AGNE_WI', Alarams: 7 },
+  { client: 'CVHA_KS', Alarams: 2 },
+  { client: 'FAHD_AFH_K', Alarams: 1 },
+  { client: 'RIVR_VA', Alarams: 2 },
+  { client: 'LRMC_FL', Alarams: 1 },
+  { client: 'RUTL_VT', Alarams: 1 },
+  { client: 'MSJH_NC', Alarams: 1 },
+  { client: 'HAMC_QAT', Alarams: 1 },
+  { client: 'AHS_FL', Alarams: 5 },
+  { client: 'AHMO_CT', Alarams: 1 },
+  { client: 'HRSH_PA', Alarams: 23 },
+  { client: 'CHOC_CA', Alarams: 2 },
+  { client: 'UNIV_MO', Alarams: 1 },
+  { client: 'CERN_CCBH', Alarams: 7 },
+  { client: 'CHLA_CA', Alarams: 1 },
+  { client: 'CASA_AZ', Alarams: 1 },
+  { client: 'PCMC_MY', Alarams: 1 },
+  { client: 'CITY_CA', Alarams: 1 },
+  { client: 'BARN_HS', Alarams: 1 },
+  { client: 'MIDH_MI', Alarams: 2 },
+  { client: 'LACJ_CA', Alarams: 2 },
+  { client: 'CERN_UCN', Alarams: 1 },
+  { client: 'CHW_CA', Alarams: 223 } ],
+    
+ "startDuration": 1,
+    "graphs": [{
+        "balloonText": "<b>[[category]]: [[value]]</b>",
+        "colorField": "color",
+        "fillAlphas": 0.9,
+        "lineAlpha": 0.2,
+        "type": "column",
+        "valueField": "Alarams"
+    }],
+    "chartCursor": {
+        "categoryBalloonEnabled": false,
+        "cursorAlpha": 0,
+        "zoomable": false
+    },
+    "categoryField": "client",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "labelRotation": 90,
+        "gridThickness":1,
+        "inside":false,
+        "gridCount":300,
+        "autoGridCount":false,
+        "title":"CLIENT MNEMONIC"
+    },
+    "ChartScrollbarSettings" :{
+        "autoGridCount":true,
+        "position":top
+    },
+    "titles": [
+		{
+			"text": "ALARMS COUNT",
+			"size": 15
+		}
+    ],
+    "valueAxes": [
+		{
+			"title": "ALARMS (max value is 10)",
+            "axisThickness":1,
+            "labelFrequency":1,
+            "autoGridCount":false,
+            "dashLength":10,
+            "minimum":0,
+            "maximum":16
+		}
+	],
+    "legend": {
+		"useGraphSettings": true
+	}
+});
+</script>
+    </head>
+    <body>
+    <div id="chartdiv" ></div>
+    </body>
+</html>
+

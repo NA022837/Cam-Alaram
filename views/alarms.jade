@@ -1,0 +1,200 @@
+html
+  head
+    meta(http-equiv='refresh', content='120')
+    title Connect Works !
+    link(rel='shortcut icon', href='./../../public/images/favicon.ico', type='image/png')
+    
+    style(type='text/css').
+      .bs-example{
+      margin: 20px;
+      }
+      .connect{
+      font-family: monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 13px;
+      }
+      .dropdown .dropdown-menu {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition:         all 0.2s  ase;
+      -moz-transition:    all 0.2s  ease;
+      -webkit-transition: all 0.2s  ease;
+      -o-transition:      all 0.2s  ease;
+      -ms-transition:     all 0.2s  ease;
+      }
+      .dropdown:hover .dropdown-menu {
+      visibility: visible;
+      opacity: 1;
+      }
+      .dropdown {
+      display: inline-block;
+      }
+      .alert {
+      padding: 8px 5px 8px 14px;
+      margin-bottom: 18px;
+      display:inline-block;
+      color: #468847;
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+      }
+      tr div.expand {
+      width: 20px;
+      height: 20px;
+      background-image: url('http://www.datatables.net/release-datatables/examples/examples_support/details_open.png');
+      }
+      tr div.open {
+      background-image: url('http://www.datatables.net/release-datatables/examples/examples_support/details_close.png');
+      }
+      
+    link(rel='shortcut icon', href='./../../public/images/favicon.ico', type='image/png')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+
+    // CSS  
+    
+    link(href='https://cdn.datatables.net/tabletools/2.2.3/css/dataTables.tableTools.css', rel='stylesheet')
+    |                 
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+    |         
+    link(href='http://cdn.datatables.net/plug-ins/f2c75b7247b/integration/jqueryui/dataTables.jqueryui.css', rel='stylesheet')
+    |         
+    link(href='https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css', rel='stylesheet')
+    
+    link(href='https://datatables.net/release-datatables/extensions/ColVis/css/dataTables.colVis.css', rel='stylesheet')
+    
+    // JS
+    script(type='text/javascript', src='https://code.jquery.com/jquery-1.11.1.min.js')
+
+    script(type='https://datatables.net/release-datatables/media/js/jquery.js')
+    
+    script(type='https://datatables.net/release-datatables/media/js/jquery.dataTables.js')
+    |         
+    script(type='text/javascript', src='https://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js')
+    |         
+    script(type='text/javascript', src='https://cdn.datatables.net/tabletools/2.2.3/js/dataTables.tableTools.min.js')
+    |         
+    script(type='text/javascript', src='http://cdn.datatables.net/plug-ins/f2c75b7247b/integration/jqueryui/dataTables.jqueryui.js')
+    |     
+    script(type='text/javascript', src='https://datatables.net/release-datatables/extensions/ColVis/js/dataTables.colVis.js')
+    script(type='text/javascripts').
+      $(document).ready(function () {
+      $('.alarm').filter(function () {
+      return +($.trim($(this).text())) > 0
+      }).parent().css('background-color', '#24AD26');
+      });
+    
+    script(type='text/javascript').
+      var data = !{(JSON.stringify(data))};
+      
+      $(function() {
+      function fnFormatDetails(oTable, nTr) {
+      var aData = oTable.fnGetData(nTr);
+      var sOut = '<table bgcolor="yellow" cellpadding="8" border="0" style="padding-left:50px;">';
+      sOut += '<tr><td>Client Name :</td><td>'+aData.ClientName+'</td></tr>';
+      sOut += '<tr><td>Frequently occurred parameter in last'+  aData.Unit +' hours :</td><td>'+aData.Parameter+'</td></tr>';
+      sOut += '</table>';
+      return sOut;
+      }
+      var alarmsTable = $('#alarmsTable').dataTable({
+      "autoWidth": false,
+      "sPaginationType": "full_numbers",
+      "dom": '<"clear">frtip',
+      aaData: data,
+      aaSorting: [[2, 'desc']],
+      aoColumns: [
+      { mData: null,      bSearchable: true,  bSortable: true, sDefaultContent: '<div class="expand" />', sWidth: "10px"},
+      { mData: 'Client',  bSearchable: true,  bSortable: true },
+      { mData: 'Alarams', bSearchable: true,  bSortable: true }
+      ]
+      });
+      $('#alarmsTable tbody').on('click', 'td div.expand', function() {
+      var nTr = $(this).parents('tr')[0];
+      if (alarmsTable.fnIsOpen(nTr)) {
+      $(this).removeClass('open');
+      alarmsTable.fnClose(nTr);
+      } else {
+      $(this).addClass('open');
+      alarmsTable.fnOpen(nTr, fnFormatDetails(alarmsTable, nTr), 'details');
+      }
+      });
+      });
+  |     
+  body.connect
+    .bs-example
+      nav.navbar.navbar-default
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+        a.brand(href='/', style='max-width:200px')
+        img(alt='Brand', src='./../../public/images/cerner-blue-large.png', style='max-width:120px')
+        
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='/ShowBarchart/1') Monthly Report
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+              i.fa.fa-bar-chart
+              |  Graph Chart
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='/Barchart/2')
+                  i.fa.fa-bar-chart
+                  |  Last 2 Hours Chart
+              li.divider
+              li
+                a(href='/Barchart/4')
+                  i.fa.fa-bar-chart
+                  |  Last 12 Hours Chart
+              li.divider
+              li
+                a(href='/Barchart/12')
+                  i.fa.fa-bar-chart
+                  |  Last 24 Hours Chart
+                    
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+              i.fa.fa-bell
+              |  Alert Check
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='/searchAlarms/2')
+                  i.fa.fa-download  
+                  |  Last 2 Hours
+              li.divider
+              li
+                a(href='/searchAlarms/4')
+                  i.fa.fa-download  
+                  |  Last 4 Hours
+              li.divider
+              li
+                a(href='/searchAlarms/12')
+                  i.fa.fa-download  
+                  |  Last 12 Hours
+              li.divider
+              li
+                a(href='/searchAlarms/24')
+                  i.fa.fa-download  
+                  |  Last 24 Hours
+      .container(class='@container-large-desktop')
+      .row.clearfix
+        .row
+          .col-sm-16.col-md-12
+            .thumbnail
+              table#alarmsTable.table.table-bordered.table-hover(cellspacing='0', width='50%')
+                thead
+                  tr.info
+                    td.client Details
+                    td.client
+                      i.fa.fa-h-square
+                      |         Client Mnemonic
+                    td.alarm
+                      i.fa.fa-bell-o
+                      |  Alarms
+
+    p.alert.alert-success(role='alert')
+      i.fa.fa-refresh.fa-spin
+      |   Page Refresh :: Every 2 min.

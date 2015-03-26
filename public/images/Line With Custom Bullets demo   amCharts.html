@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://www.amcharts.com/demos/line-with-custom-bullets/#theme-none -->
+<html id="__html" class="" lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><![endif]-->
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.amcharts.com/favicon.ico">
+<link rel="image_src" href="http://www.amcharts.com/wp-content/themes/amcharts/static/img/share_google.png">
+<style>@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);</style>
+ 
+<script type="text/javascript" async="" src="./Line With Custom Bullets demo   amCharts_files/dc.js"></script><script src="./Line With Custom Bullets demo   amCharts_files/cb=gapi.loaded_1" async=""></script><script src="./Line With Custom Bullets demo   amCharts_files/cb=gapi.loaded_0" async=""></script><script id="twitter-wjs" src="./Line With Custom Bullets demo   amCharts_files/widgets.js"></script><script id="facebook-jssdk" src="./Line With Custom Bullets demo   amCharts_files/all.js"></script><script type="text/javascript" async="" src="./Line With Custom Bullets demo   amCharts_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./Line With Custom Bullets demo   amCharts_files/platform.js" gapi_processed="true"></script><script type="text/javascript">
+		(function() {
+			var dMode		= document.documentMode;
+			var className	= "";
+			if ( dMode ) {
+				if ( dMode < 9 ) {
+					className += ' ieLT9 ';
+				}
+				className += 'ie' + dMode;
+				document.getElementById('__html').setAttribute('class',className);
+			}
+		})();
+	</script>
+ 
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.amcharts.com/xmlrpc.php">
+<script type="text/javascript">
+		var ajaxurl = 'http://www.amcharts.com/wp-admin/admin-ajax.php';
+		var homeurl = 'http://www.amcharts.com';
+		var themeurl = 'http://www.amcharts.com/wp-content/themes/amcharts';
+	</script>
+ 
+<title>Line With Custom Bullets demo | amCharts</title>
+<meta name="description" content="Besides a bunch of predefined bullets (our charts support round, square, triangle, bubble, diamond bullet shapes) you can use your own images as bullets of">
+<link rel="canonical" href="http://www.amcharts.com/demos/line-with-custom-bullets/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Line With Custom Bullets demo | amCharts">
+<meta property="og:description" content="Besides a bunch of predefined bullets (our charts support round, square, triangle, bubble, diamond bullet shapes) you can use your own images as bullets of">
+<meta property="og:url" content="http://www.amcharts.com/demos/line-with-custom-bullets/">
+<meta property="og:site_name" content="amCharts">
+ 
+<link rel="alternate" type="application/rss+xml" title="amCharts » Feed" href="http://feeds.feedburner.com/amcharts/">
+<link rel="alternate" type="application/rss+xml" title="amCharts » Comments Feed" href="http://www.amcharts.com/comments/feed/">
+<link rel="stylesheet" id="amcharts-style-bootstrap-css" href="./Line With Custom Bullets demo   amCharts_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="amcharts-style-fontawesome-css" href="./Line With Custom Bullets demo   amCharts_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="amcharts-style-core-css" href="./Line With Custom Bullets demo   amCharts_files/core.css" type="text/css" media="all">
+<link rel="stylesheet" id="amcharts-style-mobile-css" href="./Line With Custom Bullets demo   amCharts_files/mobile.css" type="text/css" media="all">
+<link rel="stylesheet" id="amcharts-style-codemirror-css" href="./Line With Custom Bullets demo   amCharts_files/codemirror.css" type="text/css" media="all">
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/core.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/amcharts.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/pie.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/serial.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/amstock.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/funnel.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/gauge.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/radar.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/xy.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/ammap_amcharts_extension.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.amcharts.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.amcharts.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.1">
+<link rel="shortlink" href="http://www.amcharts.com/?p=512">
+ 
+<style type="text/css">div.simplesocialbuttons{height:20px;margin:10px auto 10px 0;text-align:left;clear:left;}div.simplesocialbutton{float:left;}div.ssb-button-googleplus{width:100px;}div.ssb-button-fblike{width:140px;line-height:1;}div.ssb-button-twitter{width:130px;}div.ssb-button-pinterest{width:100px;}.fb-like iframe{max-width:none!important;}</style>
+ 
+<script src="./Line With Custom Bullets demo   amCharts_files/detect.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body class="single single-demos postid-512" data-twttr-rendered="true">
+<div class="app">
+<div class="app-header">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="navbar navbar-default" role="navigation">
+<a class="m-nav-opener m-only">MENU</a>
+<div class="app-nav-brand">
+<div class="app-nav-brand-inner">
+<a href="http://www.amcharts.com/"><img src="./Line With Custom Bullets demo   amCharts_files/logo.png" alt="amCharts: JavaScript Charts and Maps"></a>
+</div>
+</div>
+<ul id="menu-main-menu" class="nav navbar-nav navbar-main"><li id="nav-menu-item-151" class=" dropdown"><a href="http://www.amcharts.com/javascript-charts/"><span>Products</span></a>
+<ul class="dropdown-menu">
+<li id="nav-menu-item-104" class=""><a title="JavaScript Charts" href="http://www.amcharts.com/javascript-charts/"><i class="product-icon javascript-charts"></i><span>JavaScript</span><strong class="app-font transform-uppercase">Charts</strong></a></li>
+<li id="nav-menu-item-103" class=""><a title="JavaScript Stock Chart" href="http://www.amcharts.com/stock-chart/"><i class="product-icon stock-chart"></i><span>JavaScript</span><strong class="app-font transform-uppercase">Stock Chart</strong></a></li>
+<li id="nav-menu-item-102" class=""><a title="Interactive JavaScript Maps" href="http://www.amcharts.com/javascript-maps/"><i class="product-icon javascript-maps"></i><span>Interactive JavaScript</span><strong class="app-font transform-uppercase">Maps</strong></a></li>
+</ul>
+</li>
+<li id="nav-menu-item-112" class=" dropdown active"><a href="http://www.amcharts.com/demos/"><span>Demos</span></a>
+<ul class="dropdown-menu">
+<li id="nav-menu-item-113" class=" active"><a href="http://www.amcharts.com/demos/"><span>Charts and Maps</span></a></li>
+<li id="nav-menu-item-114" class=""><a href="http://www.amcharts.com/inspiration/"><span>Inspiration Gallery</span></a></li>
+</ul>
+</li>
+<li id="nav-menu-item-138" class=""><a href="http://www.amcharts.com/download/"><span>Download</span></a></li>
+<li id="nav-menu-item-96" class=""><a href="http://www.amcharts.com/online-store/"><span>Buy</span></a></li>
+<li id="nav-menu-item-100" class=""><a href="http://www.amcharts.com/support/"><span>Support</span></a></li>
+<li id="nav-menu-item-208" class=" dropdown"><a href="http://docs.amcharts.com/3/"><span>Docs</span></a>
+<ul class="dropdown-menu">
+<li id="nav-menu-item-210" class=""><a href="http://docs.amcharts.com/3/"><span>API Reference</span></a></li>
+<li id="nav-menu-item-972" class=""><a href="http://www.amcharts.com/tutorials/"><span>Tutorials</span></a></li>
+<li id="nav-menu-item-4331" class=""><a href="http://www.amcharts.com/tips/"><span>Quick Tips</span></a></li>
+</ul>
+</li>
+</ul> <ul class="nav navbar-nav navbar-social">
+<li>
+<a class="pull-left" href="http://www.facebook.com/amcharts" target="_blank"><i class="fa fa-facebook-square"></i></a>
+</li>
+<li>
+<a class="pull-left" href="http://www.twitter.com/amcharts" target="_blank"><i class="fa fa-twitter"></i></a>
+</li>
+<li>
+<a class="pull-left" href="http://feeds.feedburner.com/amcharts" target="_blank"><i class="fa fa-rss"></i></a>
+</li>
+<li>
+<div style="padding-top:12px; padding-left:15px;"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" tabindex="0" vspace="0" width="100%" id="I0_1426134553792" name="I0_1426134553792" src="./Line With Custom Bullets demo   amCharts_files/fastbutton(1).html" data-gapiattached="true" title="+1"></iframe></div></div>
+<script type="text/javascript">
+									  (function() {
+									    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+									    po.src = 'https://apis.google.com/js/platform.js';
+									    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+</li>
+<li>
+<a class="btn btn-flat btn-liveeditor transform-uppercase" href="http://live.amcharts.com/">
+<span class="title">Live Editor</span>
+<span class="subtitle">Create charts online</span>
+</a>
+ 
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="app-body">
+<div class="demo-body">
+<div id="style_css"><style type="text/css">#chartdiv {
+	width	: 100%;
+	height	: 500px;
+}	</style></div>
+<div class="app-section background-gray">
+<div class="container">
+<div class="row demo-headline">
+<div class="col-sm-12">
+<a class="demo-flipper-toggler btn btn-flat btn-blue less-margin pull-right transform-uppercase">
+<span>Run</span>
+</a>
+<div class="demo-nav-top demo-themes pull-right ">
+<ul>
+<li>
+<span class="size-small family-light color-lightgray m-hide">Click to change theme:&nbsp;&nbsp;</span>
+<span class="size-small family-light color-lightgray m-only">Theme:&nbsp;&nbsp;</span>
+</li>
+<li class="demo-themes-item amcharts-tooltip active" data-theme="none" data-css="" data-title="Default" data-original-title="" title="">
+<a class="fx-all-250" href="./Line With Custom Bullets demo   amCharts_files/Line With Custom Bullets demo   amCharts.html">
+<img width="36" height="35" src="./Line With Custom Bullets demo   amCharts_files/theme_none.png" class="attachment-full wp-post-image" alt="theme_none"> </a>
+</li>
+<li class="demo-themes-item amcharts-tooltip" data-theme="patterns" data-css="" data-title="Patterns" data-original-title="" title="">
+<a class="fx-all-250" href="http://www.amcharts.com/demos/line-with-custom-bullets/#theme-patterns">
+<img width="35" height="35" src="./Line With Custom Bullets demo   amCharts_files/theme_pattern2.png" class="attachment-full wp-post-image" alt="theme_pattern"> </a>
+</li>
+<li class="demo-themes-item amcharts-tooltip" data-theme="chalk" data-css="background: #282828 url(&#39;http://www.amcharts.com/lib/3/patterns/chalk/bg.jpg&#39;);color: #fff;	" data-title="Chalk" data-original-title="" title="">
+<a class="fx-all-250" href="http://www.amcharts.com/demos/line-with-custom-bullets/#theme-chalk">
+<img width="36" height="35" src="./Line With Custom Bullets demo   amCharts_files/theme_chalk.png" class="attachment-full wp-post-image" alt="theme_chalk"> </a>
+</li>
+<li class="demo-themes-item amcharts-tooltip" data-theme="dark" data-css="background: #3f3f4f;color:#ffffff;	" data-title="Dark" data-original-title="" title="">
+<a class="fx-all-250" href="http://www.amcharts.com/demos/line-with-custom-bullets/#theme-dark">
+<img width="36" height="35" src="./Line With Custom Bullets demo   amCharts_files/theme_dark2.png" class="attachment-full wp-post-image" alt="theme_dark"> </a>
+</li>
+<li class="demo-themes-item amcharts-tooltip" data-theme="light" data-css="" data-title="Light" data-original-title="" title="">
+<a class="fx-all-250" href="http://www.amcharts.com/demos/line-with-custom-bullets/#theme-light">
+<img width="36" height="35" src="./Line With Custom Bullets demo   amCharts_files/theme_light2.png" class="attachment-full wp-post-image" alt="theme_light"> </a>
+</li>
+</ul>
+</div>
+<h2 class="app-font family-light size-biggerer" style="padding: 0 0 0 20px;">
+<i class="product-icon javascript-charts position-relative"></i>Javascript Charts </h2>
+</div>
+</div>
+<div class="row demo-example">
+<div class="col-sm-12">
+<div class="demo-flipper active">
+<div class="demo-flipper-container">
+<div class="demo-flipper-front demo-panel-white fx-all-250" style="">
+<div id="container_html" class="chart-reset overflow-auto" style="height: 100%;"><div id="chartdiv" style="overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 1120px; height: 500px; cursor: default;"><svg version="1.1" style="position: absolute; width: 1120px; height: 500px; left: 0.5px;"><desc>JavaScript chart by amCharts 3.13.1</desc><g><path cs="100,100" d="M0.5,0.5 L1119.5,0.5 L1119.5,499.5 L0.5,499.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path><path cs="100,100" d="M0.5,0.5 L1059.5,0.5 L1059.5,459.5 L0.5,459.5 L0.5,0.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0" transform="translate(40,20)"></path></g><g><g transform="translate(40,20)"></g><g transform="translate(40,20)" visibility="visible"><g><path cs="100,100" d="M0.5,459.5 L0.5,459.5 L1059.5,459.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,402.5 L0.5,402.5 L1059.5,402.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,344.5 L0.5,344.5 L1059.5,344.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,287.5 L0.5,287.5 L1059.5,287.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,230.5 L0.5,230.5 L1059.5,230.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,172.5 L0.5,172.5 L1059.5,172.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,115.5 L0.5,115.5 L1059.5,115.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,57.5 L0.5,57.5 L1059.5,57.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,0.5 L1059.5,0.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.15" stroke="#000000"></path></g></g></g><g></g><g></g><g></g><g></g><g><g transform="translate(40,20)"><g></g><g></g><g clip-path="url(#AmChartsEl-2)"><path cs="100,100" d="M16.5,430.5 L47.5,373.5 L78.5,384.5 L109.5,361.5 L140.5,373.5 L234.5,350.5 L265.5,339.5 L296.5,344.5 L327.5,344.5 L358.5,350.5 L452.5,316.5 L483.5,321.5 L514.5,310.5 L545.5,304.5 L576.5,316.5 L670.5,293.5 L701.5,298.5 L732.5,287.5 L763.5,46.5 L794.5,212.5 L888.5,281.5 L950.5,287.5 L981.5,293.5 L1012.5,304.5 L1043.5,310.5 M0,0 L0,0" fill="none" stroke-width="1" stroke-opacity="1" stroke="#FF6600"></path></g><clippath id="AmChartsEl-2"><rect x="0" y="0" width="1061" height="461" rx="0" ry="0" stroke-width="0"></rect></clippath></g></g><g clip-path="url(#AmChartsEl-1)"></g><g><path cs="100,100" d="M0.5,459.5 L1059.5,459.5 L1059.5,459.5" fill="none" stroke-width="1" stroke-dasharray="4" stroke-opacity="0.3" stroke="#000000" transform="translate(40,20)"></path><g><path cs="100,100" d="M0.5,0.5 L1059.5,0.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(40,479)"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,459.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(40,20)" visibility="visible"></path></g></g><g><g transform="translate(40,20)" visibility="hidden"><path cs="100,100" d="M0.5,0.5 L0.5,0.5 L0.5,459.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#CC0000" visibility="hidden" transform="translate(78,0)"></path></g></g><g></g><g><g transform="translate(40,20)"><g transform="translate(16,430)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(47,373)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(78,384) scale(1)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(109,361)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(140,373)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(234,350)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(265,339)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(296,344)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(327,344)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(358,350)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(452,316)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(483,321)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(514,310) scale(1)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(545,304)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(576,316) scale(1)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(670,293)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(701,298) scale(1)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(732,287)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(763,46)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/redstar.png" transform="translate(-7,-7)"></image></g><g transform="translate(794,212) scale(1)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(888,281)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(950,287)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(981,293)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(1012,304)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g><g transform="translate(1043,310)"><image x="0" y="0" width="14" height="14" xlink:href="http://www.amcharts.com/lib/3/images/star.png" transform="translate(-7,-7)"></image></g></g></g><g><g transform="translate(40,20)"><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" font-weight="bold" text-anchor="start" transform="translate(3,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(96,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 05</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(190,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 08</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(283,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 11</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(377,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 14</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(470,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 17</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(564,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 20</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(657,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 23</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(751,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 26</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(844,448)"><tspan y="6" x="0" style="font-size: 11px;">Oct 29</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" font-weight="bold" text-anchor="start" transform="translate(937,448)"><tspan y="6" x="0" style="font-size: 11px;">Nov</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(1031,448)"><tspan y="6" x="0" style="font-size: 11px;">Nov 04</tspan></text></g><g transform="translate(40,20)" visibility="visible"><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,457)"><tspan y="6" x="0" style="font-size: 11px;">0</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,400)"><tspan y="6" x="0" style="font-size: 11px;">10</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,342)"><tspan y="6" x="0" style="font-size: 11px;">20</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,285)"><tspan y="6" x="0" style="font-size: 11px;">30</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,228)"><tspan y="6" x="0" style="font-size: 11px;">40</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,170)"><tspan y="6" x="0" style="font-size: 11px;">50</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,113)"><tspan y="6" x="0" style="font-size: 11px;">60</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,55)"><tspan y="6" x="0" style="font-size: 11px;">70</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="end" transform="translate(-12,-2)"><tspan y="6" x="0" style="font-size: 11px;">80</tspan></text></g></g><g><g></g></g><g></g><g><g transform="translate(1018,28)" visibility="hidden"><rect x="0.5" y="0.5" width="90" height="31" rx="0" ry="0" stroke-width="1" fill="#e5e5e5" stroke="#e5e5e5" fill-opacity="1" stroke-opacity="1" opacity="0" transform="translate(-8,-8)"></rect><image x="0" y="0" width="17" height="17" xlink:href="http://www.amcharts.com/lib/3/images/lens.png"></image><text y="6" fill="#000000" font-family="Verdana" font-size="11" opacity="1" text-anchor="start" transform="translate(22,6)"><tspan y="6" x="0" style="font-size: 11px;">Show all</tspan></text></g></g><g></g><clippath id="AmChartsEl-1"><rect x="40" y="20" width="1059" height="459" rx="0" ry="0" stroke-width="0"></rect></clippath></svg></div><div style="position: absolute;top:20px;right:20px;bottom:auto;left:auto;" class="amExportButton"><ul style="list-style: none; margin: 0; padding: 0;"><li><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#" style="display: block; opacity: 0.75; color: rgb(0, 0, 0); padding: 6px; margin: 0px; text-align: left; text-decoration: none; font-family: Verdana; font-size: 11px; background-color: transparent;"><img alt="" src="./Line With Custom Bullets demo   amCharts_files/export.png" style="margin: 0 auto;border: none;outline: none"></a></li></ul></div></div></div>		</div>
+</div>
+<div class="demo-flipper-back demo-panel-white fx-all-250">
+<form id="jsfiddle" target="_amcharts" method="post" action="http://jsfiddle.net/api/post/library/pure/">
+<ul class="nav nav-tabs">
+<li class="active"><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#javascript" data-toggle="tab">Javascript</a></li>
+<li><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#html" data-toggle="tab">HTML</a></li>
+<li><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#css" data-toggle="tab">CSS</a></li>
+<li><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#resources" data-toggle="tab">Resources</a></li>
+<li class="pull-right"><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#" class="demo-flipper-codepen">Open in CodePen</a></li>
+<li class="pull-right"><a href="http://www.amcharts.com/demos/line-with-custom-bullets/#" class="demo-flipper-jsfiddle">Open in JSFiddle</a></li>
+</ul>
+<div class="tab-content position-relative">
+<div id="javascript" class="tab-pane overflow-auto active">
+<div id="editor_js" style="height: 437px;"><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 186px; left: 108.8095703125px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 46px;"><div style="height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px;"><div style="width: 1px; height: 694px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 46px; min-height: 694px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div style="width: 50px; height: 50px; overflow-x: scroll;"></div></div><div style="position: relative; z-index: 1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 62.8095703125px; top: 0px; width: 996.1904296875px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 350px; width: 58.8095703125px; height: 14px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 1055px; height: 350px;"></div></div><div class="CodeMirror-code"><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">1</div></div><pre><span class="cm-keyword">var</span> <span class="cm-variable">chart</span> = <span class="cm-variable">AmCharts</span>.<span class="cm-property">makeChart</span>(<span class="cm-string">"chartdiv"</span>, {</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">2</div></div><pre> &nbsp;  <span class="cm-string cm-property">"type"</span>: <span class="cm-string">"serial"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">3</div></div><pre><span class="cm-tab">    </span><span class="cm-string cm-property">"theme"</span>: <span class="cm-string">"none"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">4</div></div><pre> &nbsp;  <span class="cm-string cm-property">"pathToImages"</span>: <span class="cm-string">"http://www.amcharts.com/lib/3/images/"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">5</div></div><pre> &nbsp; &nbsp;  <span class="cm-string cm-property">"dataProvider"</span>: [{</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">6</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"date"</span>: <span class="cm-string">"2009-10-02"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">7</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"value"</span>: <span class="cm-number">5</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">8</div></div><pre> &nbsp; &nbsp;  }, {</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">9</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"date"</span>: <span class="cm-string">"2009-10-03"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">10</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"value"</span>: <span class="cm-number">15</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">11</div></div><pre> &nbsp; &nbsp;  }, {</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">12</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"date"</span>: <span class="cm-string">"2009-10-04"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">13</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"value"</span>: <span class="cm-number">13</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">14</div></div><pre> &nbsp; &nbsp;  }],</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">15</div></div><pre> &nbsp;  <span class="cm-string cm-property">"valueAxes"</span>: [{</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">16</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"axisAlpha"</span>: <span class="cm-number">0</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">17</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"dashLength"</span>: <span class="cm-number">4</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">18</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"position"</span>: <span class="cm-string">"left"</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">19</div></div><pre> &nbsp;  }],</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">20</div></div><pre> &nbsp;  <span class="cm-string cm-property">"graphs"</span>: [{</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">21</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"bulletSize"</span>: <span class="cm-number">14</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">22</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"customBullet"</span>: <span class="cm-string">"http://www.amcharts.com/lib/3/images/star.png"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">23</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"customBulletField"</span>: <span class="cm-string">"customBullet"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">24</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"valueField"</span>: <span class="cm-string">"value"</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">25</div></div><pre> &nbsp;  }],</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">26</div></div><pre> &nbsp;  <span class="cm-string cm-property">"marginTop"</span>: <span class="cm-number">20</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">27</div></div><pre> &nbsp;  <span class="cm-string cm-property">"marginRight"</span>: <span class="cm-number">20</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">28</div></div><pre> &nbsp;  <span class="cm-string cm-property">"marginLeft"</span>: <span class="cm-number">40</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">29</div></div><pre> &nbsp;  <span class="cm-string cm-property">"marginBottom"</span>: <span class="cm-number">20</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">30</div></div><pre> &nbsp;  <span class="cm-string cm-property">"chartCursor"</span>: {<span class="cm-property">graphBulletSize</span>:<span class="cm-number">1.5</span>},</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">31</div></div><pre> &nbsp;  <span class="cm-string cm-property">"autoMargins"</span>: <span class="cm-atom">false</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">32</div></div><pre> &nbsp;  <span class="cm-string cm-property">"dataDateFormat"</span>: <span class="cm-string">"YYYY-MM-DD"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">33</div></div><pre> &nbsp;  <span class="cm-string cm-property">"categoryField"</span>: <span class="cm-string">"date"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">34</div></div><pre> &nbsp;  <span class="cm-string cm-property">"categoryAxis"</span>: {</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">35</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"parseDates"</span>: <span class="cm-atom">true</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">36</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"axisAlpha"</span>: <span class="cm-number">0</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">37</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"gridAlpha"</span>: <span class="cm-number">0</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">38</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"inside"</span>: <span class="cm-atom">true</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">39</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"tickLength"</span>: <span class="cm-number">0</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">40</div></div><pre> &nbsp;  },</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">41</div></div><pre> &nbsp;  <span class="cm-string cm-property">"exportConfig"</span>: {</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">42</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"menuTop"</span>: <span class="cm-string">"20px"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">43</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"menuRight"</span>: <span class="cm-string">"20px"</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">44</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"menuItems"</span>: [{</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">45</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"icon"</span>: <span class="cm-string">'http://www.amcharts.com/lib/3/images/export.png'</span>,</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">46</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"format"</span>: <span class="cm-string">'png'</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">47</div></div><pre> &nbsp; &nbsp; &nbsp;  }]</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">48</div></div><pre> &nbsp;  }</pre></div><div style="position: relative;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">49</div></div><pre>});</pre></div><div style="position: relative; display: none;"><div style="position: absolute; left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 37px;">16</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-string cm-property">"axisAlpha"</span>: <span class="cm-number">0</span>,</pre></div></div><div class="CodeMirror-cursor" style="left: 62.8095703125px; top: 182px; height: 14px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 694px;"></div><div class="CodeMirror-gutters" style="height: 694px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 45px;"></div></div></div></div></div>
+<textarea id="code_js" name="js" class="hidden">var chart = AmCharts.makeChart("chartdiv", {
+    "type": "serial",
+	"theme": "light",
+    "pathToImages": "http://www.amcharts.com/lib/3/images/",
+    "dataProvider": [{
+        "date": "2009-10-02",
+        "value": 5
+    }, {
+        "date": "2009-10-03",
+        "value": 15
+    }, {
+        "date": "2009-10-04",
+        "value": 13
+    }, {
+        "date": "2009-10-05",
+        "value": 17
+    }, {
+        "date": "2009-10-06",
+        "value": 15
+    }, {
+        "date": "2009-10-09",
+        "value": 19
+    }, {
+        "date": "2009-10-10",
+        "value": 21
+    }, {
+        "date": "2009-10-11",
+        "value": 20
+    }, {
+        "date": "2009-10-12",
+        "value": 20
+    }, {
+        "date": "2009-10-13",
+        "value": 19
+    }, {
+        "date": "2009-10-16",
+        "value": 25
+    }, {
+        "date": "2009-10-17",
+        "value": 24
+    }, {
+        "date": "2009-10-18",
+        "value": 26
+    }, {
+        "date": "2009-10-19",
+        "value": 27
+    }, {
+        "date": "2009-10-20",
+        "value": 25
+    }, {
+        "date": "2009-10-23",
+        "value": 29
+    }, {
+        "date": "2009-10-24",
+        "value": 28
+    }, {
+        "date": "2009-10-25",
+        "value": 30
+    }, {
+        "date": "2009-10-26",
+        "value": 72,
+        "customBullet": "http://www.amcharts.com/lib/3/images/redstar.png"
+    }, {
+        "date": "2009-10-27",
+        "value": 43
+    }, {
+        "date": "2009-10-30",
+        "value": 31
+    }, {
+        "date": "2009-11-01",
+        "value": 30
+    }, {
+        "date": "2009-11-02",
+        "value": 29
+    }, {
+        "date": "2009-11-03",
+        "value": 27
+    }, {
+        "date": "2009-11-04",
+        "value": 26
+    }],
+    "valueAxes": [{
+        "axisAlpha": 0,
+        "dashLength": 4,
+        "position": "left"
+    }],
+    "graphs": [{
+        "bulletSize": 14,
+        "customBullet": "http://www.amcharts.com/lib/3/images/star.png",
+        "customBulletField": "customBullet",
+        "valueField": "value"
+    }],
+    "marginTop": 20,
+    "marginRight": 20,
+    "marginLeft": 40,
+    "marginBottom": 20,
+    "chartCursor": {graphBulletSize:1.5},
+    "autoMargins": false,
+    "dataDateFormat": "YYYY-MM-DD",
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true,
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": true,
+        "tickLength": 0
+    },
+    "exportConfig": {
+        "menuTop": "20px",
+        "menuRight": "20px",
+        "menuItems": [{
+            "icon": 'http://www.amcharts.com/lib/3/images/export.png',
+            "format": 'png'
+        }]
+    }
+});</textarea>
+</div>
+<div id="html" class="tab-pane overflow-auto">
+<div id="editor_html" style="height: 437px;"><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>x</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div>
+<textarea id="code_html" name="html" class="hidden">&lt;div id="chartdiv"&gt;&lt;/div&gt;		</textarea>
+</div>
+<div id="css" class="tab-pane overflow-auto">
+<div id="editor_css" style="height: 437px;"><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>x</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div>
+<textarea id="code_css" name="css" class="hidden">#chartdiv {
+	width	: 100%;
+	height	: 500px;
+}	</textarea>
+</div>
+<div id="resources" class="tab-pane overflow-auto">
+<div id="editor_resources" style="height: 437px;"><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>x</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div>
+<textarea id="code_resources" name="resourcesDEF" class="hidden">&lt;script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/none.js"&gt;&lt;/script&gt;
+</textarea>
+</div>
+<input type="hidden" name="normalize_css" value="yes">
+<input type="hidden" name="wrap" value="b">
+<input type="hidden" name="dtd" value="html 5">
+<input type="hidden" id="code_title" name="title" value="Line With Custom Bullets">
+<input type="hidden" id="code_description" name="description" value="Besides a bunch of predefined bullets (our charts support round, square, triangle, bubble, diamond bullet shapes) you can use your own images as bullets of your graphs. You can set one bullet for all the graph and also use individual bullets for specific data points to indicate some difference of these plots.">
+ 
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 app-content" style="padding-right: 60px;">
+<h1 class="app-font family-regular size-biggerer">
+Line With Custom Bullets </h1>
+<p>Besides a bunch of predefined bullets (our charts support round, square, triangle, bubble, diamond bullet shapes) you can use your own images as bullets of your graphs. You can set one bullet for all the graph and also use individual bullets for specific data points to indicate some difference of these plots.</p>
+<div class="simplesocialbuttons">
+<div class="simplesocialbutton ssb-button-googleplus"> <div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I1_1426134553796" name="I1_1426134553796" src="./Line With Custom Bullets demo   amCharts_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></div>
+<div class="simplesocialbutton ssb-button-fblike"> <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Line With Custom Bullets demo   amCharts_files/6Dg4oLkBbYq.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Line With Custom Bullets demo   amCharts_files/6Dg4oLkBbYq(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><div class="fb-like fb_iframe_widget" data-href="http://www.amcharts.com/demos/line-with-custom-bullets/" data-send="false" data-layout="button_count" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=563198717101351&amp;container_width=140&amp;href=http%3A%2F%2Fwww.amcharts.com%2Fdemos%2Fline-with-custom-bullets%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 76px; height: 20px;"><iframe name="f64393cc4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Line With Custom Bullets demo   amCharts_files/like.html" style="border: none; visibility: visible; width: 76px; height: 20px;" class=""></iframe></span></div></div>
+<div class="simplesocialbutton ssb-button-twitter"> <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Line With Custom Bullets demo   amCharts_files/tweet_button.b44aac737ba5fb3711801841c2833c12.en.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 110px; height: 20px;"></iframe></div>
+</div>
+ 
+<script type="text/javascript">
+//<![CDATA[
+// google plus
+window.___gcfg = {lang: 'en'};
+(function() {
+   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+   po.src = 'https://apis.google.com/js/plusone.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+// facebook 
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=563198717101351";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+// twitter 
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]>
+</script>
+ 
+</div>
+<div class="col-md-4">
+<div class="demo-nav-pages">
+<div class="app-nav-page position-relative">
+<div class="align-left pull-left position-relative" style="z-index:1;">
+<a class="btn btn-flat btn-nav btn-outline-inverse amcharts-tooltip white-space-normal" href="http://www.amcharts.com/demos/step-line-without-risers/#theme-none" data-toggle="tooltip" data-title="" data-original-title="" title="">
+<i class="fa fa-angle-left"></i>
+</a>
+</div>
+<div class="align-right pull-right position-relative" style="z-index:1;">
+<a class="btn btn-flat btn-nav btn-outline-inverse amcharts-tooltip white-space-normal" href="http://www.amcharts.com/demos/vertical-line-chart/#theme-none" data-toggle="tooltip" data-title="" data-original-title="" title="">
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<div class="align-center position-absolute full-width" style="z-index:0;">
+<a class="btn btn-nav less-margin less-padding amcharts-tooltip white-space-normal" href="http://www.amcharts.com/demos/#theme-none" data-toggle="tooltip" data-title="" data-original-title="" title="">
+<span class="less-padding">All Demos</span>
+</a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="app-content app-demo-list m-hide">
+<h3 class="family-bold transform-uppercase">Line &amp; Area demos</h3>
+<ul class="less-margin">
+<li><a class="" href="http://www.amcharts.com/demos/line-different-colors-ups-downs/#theme-none">Line with different colors for ups and downs</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/line-chart-with-scroll-and-zoom/#theme-none">Line Chart with Scroll and Zoom</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/date-based-data/#theme-none">Date Based Data</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/duration-on-value-axis/#theme-none">Duration on Value Axis</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/smoothed-line-chart/#theme-none">Smoothed Line Chart</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/trend-lines/#theme-none">Trend Lines</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/line-with-changing-color/#theme-none">Line With Changing Color</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/stacked-area/#theme-none">Stacked Area</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/100-stacked-area-chart/#theme-none">100% stacked area chart</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/area-with-time-based-data/#theme-none">Area With Time Based Data</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/fill-between-two-lines/#theme-none">Fill between two lines</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/step-line-chart/#theme-none">Step Line Chart</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/step-line-without-risers/#theme-none">Step Line Without Risers</a></li>
+<li><a class="disabled" href="./Line With Custom Bullets demo   amCharts_files/Line With Custom Bullets demo   amCharts.html">Line With Custom Bullets</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/vertical-line-chart/#theme-none">Vertical Line Chart</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/reversed-value-axis/#theme-none">Reversed Value Axis</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/chart-with-gaps-in-data/#theme-none">Chart With Gaps In Data</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/multiple-value-axes/#theme-none">Multiple Value Axes</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/logarithmic-scale/#theme-none">Logarithmic Scale</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/mixed-daily-and-intra-day-chart/#theme-none">Mixed daily and intra-day chart</a></li>
+<li><a class="" href="http://www.amcharts.com/demos/date-based-line-chart/#theme-none">Line with different negative color</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript"></script>
+<script type="text/javascript">AmCharts.themes.patterns={themeName:"patterns",AmChart:{color:"#000000"},AmCoordinateChart:{colors:"#000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000".split(" "),patterns:[{url:"/lib/3/patterns/black/pattern1.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern2.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern3.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern4.png",
+width:4,height:4},{url:"/lib/3/patterns/black/pattern5.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern6.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern7.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern8.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern9.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern10.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern11.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern12.png",width:4,height:4},
+{url:"/lib/3/patterns/black/pattern13.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern14.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern15.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern16.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern17.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern18.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern19.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern20.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern21.png",
+width:4,height:4}]},AmStockChart:{colors:"#000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000".split(" ")},AmPieChart:{depth3D:0,angle:0,labelRadius:10},AmSlicedChart:{outlineAlpha:0.3,colors:"#000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000".split(" "),outlineThickness:1,
+outlineColor:"#000000",labelTickColor:"#000000",labelTickAlpha:0.3,patterns:[{url:"/lib/3/patterns/black/pattern1.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern2.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern3.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern4.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern5.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern6.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern7.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern8.png",
+width:4,height:4},{url:"/lib/3/patterns/black/pattern9.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern10.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern11.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern12.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern13.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern14.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern15.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern16.png",width:4,height:4},
+{url:"/lib/3/patterns/black/pattern17.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern18.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern19.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern20.png",width:4,height:4},{url:"/lib/3/patterns/black/pattern21.png",width:4,height:4}]},AmRectangularChart:{zoomOutButtonColor:"#000000",zoomOutButtonRollOverAlpha:0.15,zoomOutButtonImage:"lens.png"},AxisBase:{axisColor:"#000000",axisAlpha:0.3,gridAlpha:0.05,gridColor:"#000000"},ChartScrollbar:{backgroundColor:"#000000",
+backgroundAlpha:0.13,graphFillAlpha:0.4,selectedGraphFillAlpha:0.7,graphLineAlpha:0,selectedBackgroundColor:"#FFFFFF",selectedBackgroundAlpha:0.9,gridAlpha:0.15},ChartCursor:{cursorColor:"#000000",color:"#FFFFFF",cursorAlpha:0.5},AmLegend:{color:"#000000",markerBorderAlpha:0.1,markerSize:20,switchColor:"#000000"},AmGraph:{lineAlpha:0.4,fillAlphas:0.5},AmAngularGauge:{faceAlpha:0.5,facePattern:{url:"/lib/3/patterns/black/pattern1.png",width:4,height:4}},GaugeArrow:{color:"#000000",alpha:1,nailAlpha:1,
+innerRadius:"0%",nailRadius:15,startWidth:15,borderAlpha:1,radius:"70%",nailBorderAlpha:1},GaugeAxis:{tickColor:"#000000",tickAlpha:1,tickLength:15,minorTickLength:8,axisThickness:1,axisColor:"#000000",axisAlpha:1,bandAlpha:1},TrendLine:{lineColor:"#c03246",lineAlpha:0.8},AreasSettings:{alpha:0.8,color:"#000000",colorSolid:"#000000",unlistedAreasAlpha:0.4,unlistedAreasColor:"#000000",outlineColor:"#FFFFFF",outlineAlpha:0.5,outlineThickness:0.5,rollOverColor:"#3c5bdc",rollOverOutlineColor:"#FFFFFF",
+selectedOutlineColor:"#FFFFFF",selectedColor:"#f15135",unlistedAreasOutlineColor:"#FFFFFF",unlistedAreasOutlineAlpha:0.5},LinesSettings:{color:"#000000",alpha:0.8},ImagesSettings:{alpha:0.8,labelColor:"#000000",color:"#000000",labelRollOverColor:"#3c5bdc"},ZoomControl:{buttonRollOverColor:"#3c5bdc",buttonFillColor:"#f15135",buttonFillAlpha:0.8,buttonBorderColor:"#000000",gridBackgroundColor:"#000000",gridAlpha:0.8},SmallMap:{mapColor:"#000000",rectangleColor:"#f15135",backgroundColor:"#FFFFFF",backgroundAlpha:0.7,
+borderThickness:1,borderAlpha:0.8},PeriodSelector:{color:"#000000"},PeriodButton:{color:"#000000",background:"transparent",opacity:0.7,border:"1px solid rgba(0, 0, 0, .3)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",boxSizing:"border-box"},PeriodButtonSelected:{color:"#000000",backgroundColor:"rgba(0, 0, 0, 0.1)",border:"1px solid rgba(0, 0, 0, .3)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",opacity:1,boxSizing:"border-box"},PeriodInputField:{color:"#000000",
+background:"transparent",border:"1px solid rgba(0, 0, 0, .3)",outline:"none"},DataSetSelector:{color:"#000000",selectedBackgroundColor:"rgba(0, 0, 0, .25)",rollOverBackgroundColor:"rgba(0, 0, 0, .15)"},DataSetCompareList:{color:"#000000",lineHeight:"100%",boxSizing:"initial",webkitBoxSizing:"initial",border:"1px solid rgba(0, 0, 0, .3)"},DataSetSelect:{border:"1px solid rgba(0, 0, 0, .3)",outline:"none"}};</script>
+<script type="text/javascript">AmCharts.themes.chalk={themeName:"chalk",AmChart:{color:"#e7e7e7",fontFamily:"Covered By Your Grace",fontSize:18,handDrawn:!0},AmCoordinateChart:{colors:"#FFFFFF #e384a6 #f4d499 #4d90d6 #c7e38c #9986c8 #edf28c #ffd1d4 #5ee1dc #b0eead #fef85a #8badd2".split(" ")},AmSlicedChart:{outlineAlpha:1,labelTickColor:"#FFFFFF",labelTickAlpha:0.3,colors:"#FFFFFF #e384a6 #f4d499 #4d90d6 #c7e38c #9986c8 #edf28c #ffd1d4 #5ee1dc #b0eead #fef85a #8badd2".split(" ")},AmStockChart:{colors:"#FFFFFF #e384a6 #f4d499 #4d90d6 #c7e38c #9986c8 #edf28c #ffd1d4 #5ee1dc #b0eead #fef85a #8badd2".split(" ")},
+AmRectangularChart:{zoomOutButtonColor:"#FFFFFF",zoomOutButtonRollOverAlpha:0.15,zoomOutButtonImage:"lensWhite.png"},AxisBase:{axisColor:"#FFFFFF",gridColor:"#FFFFFF"},ChartScrollbar:{backgroundColor:"#FFFFFF",backgroundAlpha:0.2,graphFillAlpha:0.5,graphLineAlpha:0,selectedBackgroundColor:"#000000",selectedBackgroundAlpha:0.25,fontSize:15,gridAlpha:0.15},ChartCursor:{cursorColor:"#FFFFFF",color:"#000000"},AmLegend:{color:"#e7e7e7",markerSize:20},AmGraph:{lineAlpha:0.8},GaugeArrow:{color:"#FFFFFF",
+alpha:0.1,nailAlpha:0,innerRadius:"40%",nailRadius:15,startWidth:15,borderAlpha:0.8,nailBorderAlpha:0},GaugeAxis:{tickColor:"#FFFFFF",tickAlpha:0.8,tickLength:15,minorTickLength:8,axisThickness:3,axisColor:"#FFFFFF",axisAlpha:0.8,bandAlpha:0.4},TrendLine:{lineColor:"#c03246",lineAlpha:0.8},AmMap:{handDrawn:!1},AreasSettings:{alpha:0.8,color:"#FFFFFF",colorSolid:"#000000",unlistedAreasAlpha:0.4,unlistedAreasColor:"#FFFFFF",outlineColor:"#000000",outlineAlpha:0.5,outlineThickness:0.5,rollOverColor:"#4d90d6",
+rollOverOutlineColor:"#000000",selectedOutlineColor:"#000000",selectedColor:"#e384a6",unlistedAreasOutlineColor:"#000000",unlistedAreasOutlineAlpha:0.5},LinesSettings:{color:"#FFFFFF",alpha:0.8},ImagesSettings:{alpha:0.8,labelFontSize:16,labelColor:"#FFFFFF",color:"#FFFFFF",labelRollOverColor:"#4d90d6"},ZoomControl:{buttonRollOverColor:"#4d90d6",buttonFillColor:"#e384a6",buttonFillAlpha:0.8,buttonBorderColor:"#FFFFFF",gridBackgroundColor:"#FFFFFF",gridAlpha:0.8},SmallMap:{mapColor:"#FFFFFF",rectangleColor:"#e384a6",
+backgroundColor:"#000000",backgroundAlpha:0.7,borderThickness:1,borderAlpha:0.8},PeriodSelector:{fontFamily:"Covered By Your Grace",fontSize:"16px",color:"#e7e7e7"},PeriodButton:{fontFamily:"Covered By Your Grace",fontSize:"16px",color:"#e7e7e7",background:"transparent",opacity:0.7,border:"1px solid rgba(255, 255, 255, .15)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",boxSizing:"border-box"},PeriodButtonSelected:{fontFamily:"Covered By Your Grace",fontSize:"16px",color:"#e7e7e7",
+backgroundColor:"rgba(255, 255, 255, 0.1)",border:"1px solid rgba(255, 255, 255, .3)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",opacity:1,boxSizing:"border-box"},PeriodInputField:{fontFamily:"Covered By Your Grace",fontSize:"16px",color:"#e7e7e7",background:"transparent",border:"1px solid rgba(255, 255, 255, .15)",outline:"none"},DataSetSelector:{fontFamily:"Covered By Your Grace",fontSize:"16px",color:"#e7e7e7",selectedBackgroundColor:"rgba(255, 255, 255, .25)",rollOverBackgroundColor:"rgba(255, 255, 255, .15)"},
+DataSetCompareList:{fontFamily:"Covered By Your Grace",fontSize:"16px",color:"#e7e7e7",lineHeight:"100%",boxSizing:"initial",webkitBoxSizing:"initial",border:"1px solid rgba(255, 255, 255, .15)"},DataSetSelect:{fontFamily:"Covered By Your Grace",fontSize:"16px",border:"1px solid rgba(255, 255, 255, .15)",outline:"none"}};</script>
+<script type="text/javascript">AmCharts.themes.dark={themeName:"dark",AmChart:{color:"#e7e7e7",fontFamily:"Lato",fontSize:13},AmCoordinateChart:{colors:"#ae85c9 #aab9f7 #b6d2ff #c9e6f2 #c9f0e1 #e8d685 #e0ad63 #d48652 #d27362 #495fba #7a629b #8881cc".split(" ")},AmStockChart:{colors:"#639dbd #e8d685 #ae85c9 #c9f0e1 #d48652 #629b6d #719dc3 #719dc3".split(" ")},AmSlicedChart:{outlineAlpha:1,outlineThickness:2,labelTickColor:"#FFFFFF",labelTickAlpha:0.3,colors:"#495fba #e8d685 #ae85c9 #c9f0e1 #d48652 #629b6d #719dc3 #719dc3".split(" ")},
+AmRectangularChart:{zoomOutButtonColor:"#FFFFFF",zoomOutButtonRollOverAlpha:0.15,zoomOutButtonImage:"lensWhite.png"},AxisBase:{axisColor:"#FFFFFF",axisAlpha:0.3,gridAlpha:0.1,gridColor:"#FFFFFF",dashLength:3},ChartScrollbar:{backgroundColor:"#000000",backgroundAlpha:0.2,graphFillAlpha:0.2,graphLineAlpha:0,graphFillColor:"#FFFFFF",selectedGraphFillColor:"#FFFFFF",selectedGraphFillAlpha:0.4,selectedGraphLineColor:"#FFFFFF",selectedBackgroundColor:"#FFFFFF",selectedBackgroundAlpha:0.09,gridAlpha:0.15},
+ChartCursor:{cursorColor:"#FFFFFF",color:"#000000",cursorAlpha:0.5},AmLegend:{color:"#e7e7e7"},AmGraph:{lineAlpha:0.9},GaugeArrow:{color:"#FFFFFF",alpha:0.8,nailAlpha:0,innerRadius:"40%",nailRadius:15,startWidth:15,borderAlpha:0.8,nailBorderAlpha:0},GaugeAxis:{tickColor:"#FFFFFF",tickAlpha:1,tickLength:15,minorTickLength:8,axisThickness:3,axisColor:"#FFFFFF",axisAlpha:1,bandAlpha:0.8},TrendLine:{lineColor:"#c03246",lineAlpha:0.8},AreasSettings:{alpha:0.8,color:"#FFFFFF",colorSolid:"#000000",unlistedAreasAlpha:0.4,
+unlistedAreasColor:"#FFFFFF",outlineColor:"#000000",outlineAlpha:0.5,outlineThickness:0.5,rollOverColor:"#3c5bdc",rollOverOutlineColor:"#000000",selectedOutlineColor:"#000000",selectedColor:"#f15135",unlistedAreasOutlineColor:"#000000",unlistedAreasOutlineAlpha:0.5},LinesSettings:{color:"#FFFFFF",alpha:0.8},ImagesSettings:{alpha:0.8,labelColor:"#FFFFFF",color:"#FFFFFF",labelRollOverColor:"#3c5bdc"},ZoomControl:{buttonRollOverColor:"#3c5bdc",buttonFillColor:"#f15135",buttonFillAlpha:0.8,gridBackgroundColor:"#FFFFFF",
+buttonBorderAlpha:0,buttonCornerRadius:2,gridAlpha:0.5,gridBackgroundColor:"#FFFFFF",homeIconFile:"homeIconWhite.gif",buttonIconAlpha:0.6,gridAlpha:0.2,buttonSize:20},SmallMap:{mapColor:"#FFFFFF",rectangleColor:"#ffffff",backgroundColor:"#000000",backgroundAlpha:0.7,borderThickness:1,borderAlpha:0.8},PeriodSelector:{color:"#e7e7e7"},PeriodButton:{color:"#e7e7e7",background:"transparent",opacity:0.7,border:"1px solid rgba(255, 255, 255, .15)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",
+boxSizing:"border-box"},PeriodButtonSelected:{color:"#e7e7e7",backgroundColor:"rgba(255, 255, 255, 0.1)",border:"1px solid rgba(255, 255, 255, .3)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",opacity:1,boxSizing:"border-box"},PeriodInputField:{color:"#e7e7e7",background:"transparent",border:"1px solid rgba(255, 255, 255, .15)",outline:"none"},DataSetSelector:{color:"#e7e7e7",selectedBackgroundColor:"rgba(255, 255, 255, .25)",rollOverBackgroundColor:"rgba(255, 255, 255, .15)"},
+DataSetCompareList:{color:"#e7e7e7",lineHeight:"100%",boxSizing:"initial",webkitBoxSizing:"initial",border:"1px solid rgba(255, 255, 255, .15)"},DataSetSelect:{border:"1px solid rgba(255, 255, 255, .15)",outline:"none"}};</script>
+<script type="text/javascript">AmCharts.themes.light={AmChart:{color:"#000000",fontFamily:"Lato",fontSize:13},AmCoordinateChart:{colors:"#67b7dc #fdd400 #84b761 #cc4748 #cd82ad #2f4074 #448e4d #b7b83f #b9783f #b93e3d #913167".split(" ")},AmStockChart:{colors:"#67b7dc #fdd400 #84b761 #cc4748 #cd82ad #2f4074 #448e4d #b7b83f #b9783f #b93e3d #913167".split(" ")},AmSlicedChart:{outlineAlpha:1,outlineThickness:2,labelTickColor:"#000000",labelTickAlpha:0.3,colors:"#67b7dc #fdd400 #84b761 #cc4748 #cd82ad #2f4074 #448e4d #b7b83f #b9783f #b93e3d #913167".split(" ")},
+AmRectangularChart:{zoomOutButtonColor:"#000000",zoomOutButtonRollOverAlpha:0.15,zoomOutButtonImage:"lens.png"},AxisBase:{axisColor:"#000000",axisAlpha:0.3,gridAlpha:0.1,gridColor:"#000000"},ChartScrollbar:{backgroundColor:"#000000",backgroundAlpha:0.12,graphFillAlpha:0.5,graphLineAlpha:0,selectedBackgroundColor:"#FFFFFF",selectedBackgroundAlpha:0.4,gridAlpha:0.15},ChartCursor:{cursorColor:"#000000",color:"#FFFFFF",cursorAlpha:0.5},AmLegend:{color:"#000000"},AmGraph:{lineAlpha:0.9},GaugeArrow:{color:"#000000",
+alpha:0.8,nailAlpha:0,innerRadius:"40%",nailRadius:15,startWidth:15,borderAlpha:0.8,nailBorderAlpha:0},GaugeAxis:{tickColor:"#000000",tickAlpha:1,tickLength:15,minorTickLength:8,axisThickness:3,axisColor:"#000000",axisAlpha:1,bandAlpha:0.8},TrendLine:{lineColor:"#c03246",lineAlpha:0.8},AreasSettings:{alpha:0.8,color:"#67b7dc",colorSolid:"#003767",unlistedAreasAlpha:0.4,unlistedAreasColor:"#000000",outlineColor:"#FFFFFF",outlineAlpha:0.5,outlineThickness:0.5,rollOverColor:"#3c5bdc",rollOverOutlineColor:"#FFFFFF",
+selectedOutlineColor:"#FFFFFF",selectedColor:"#f15135",unlistedAreasOutlineColor:"#FFFFFF",unlistedAreasOutlineAlpha:0.5},LinesSettings:{color:"#000000",alpha:0.8},ImagesSettings:{alpha:0.8,labelColor:"#000000",color:"#000000",labelRollOverColor:"#3c5bdc"},ZoomControl:{buttonRollOverColor:"#3c5bdc",buttonFillColor:"#3994e2",buttonBorderColor:"#3994e2",buttonFillAlpha:0.8,gridBackgroundColor:"#FFFFFF",buttonBorderAlpha:0,buttonCornerRadius:2,gridColor:"#FFFFFF",gridBackgroundColor:"#000000",buttonIconAlpha:0.6,
+gridAlpha:0.6,buttonSize:20},SmallMap:{mapColor:"#5a73db",rectangleColor:"#ffffff",backgroundColor:"#FFFFFF",backgroundAlpha:0.7,borderThickness:1,borderAlpha:0.8},PeriodSelector:{color:"#000000"},PeriodButton:{color:"#000000",background:"transparent",opacity:0.7,border:"1px solid rgba(0, 0, 0, .3)",MozBorderRadius:"5px",borderRadius:"5px",margin:"1px",outline:"none",boxSizing:"border-box"},PeriodButtonSelected:{color:"#000000",backgroundColor:"#b9cdf5",border:"1px solid rgba(0, 0, 0, .3)",MozBorderRadius:"5px",
+borderRadius:"5px",margin:"1px",outline:"none",opacity:1,boxSizing:"border-box"},PeriodInputField:{color:"#000000",background:"transparent",border:"1px solid rgba(0, 0, 0, .3)",outline:"none"},DataSetSelector:{color:"#000000",selectedBackgroundColor:"#b9cdf5",rollOverBackgroundColor:"#a8b0e4"},DataSetCompareList:{color:"#000000",lineHeight:"100%",boxSizing:"initial",webkitBoxSizing:"initial",border:"1px solid rgba(0, 0, 0, .3)"},DataSetSelect:{border:"1px solid rgba(0, 0, 0, .3)",outline:"none"}};</script>
+</div>
+</div>  
+<div class="app-footer">
+<div class="app-section background-white">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="col-5 col-md-4">
+<div><h3 class="family-black color-gray transform-uppercase">Products</h3><div class="menu-footer-products-container"><ul id="menu-footer-products" class="menu"><li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="http://www.amcharts.com/javascript-charts/">JavaScript Charts</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="http://www.amcharts.com/stock-chart/">Javascript Stock Chart</a></li>
+<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="http://www.amcharts.com/javascript-maps/">Interactive JavaScript Maps</a></li>
+</ul></div></div> </div>
+<div class="col-5 col-md-4">
+<div><h3 class="family-black color-gray transform-uppercase">Related</h3><div class="menu-footer-related-container"><ul id="menu-footer-related" class="menu"><li id="menu-item-3098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3098"><a href="http://www.amcharts.com/visited_countries/">Visited Countries Map</a></li>
+<li id="menu-item-3097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3097"><a href="http://www.amcharts.com/visited_states/">Visited States Map</a></li>
+<li id="menu-item-3068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3068"><a href="http://www.amcharts.com/about/">About</a></li>
+</ul></div></div> </div>
+<div class="col-5 col-md-4">
+<div><h3 class="family-black color-gray transform-uppercase">Get Social</h3><div class="menu-footer-social-container"><ul id="menu-footer-social" class="menu"><li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="http://www.facebook.com/amcharts"><i class="fa fa-facebook-square color-gray"></i> Facebook</a></li>
+<li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="http://www.twitter.com/amcharts"><i class="fa fa-twitter color-gray"></i> Twitter</a></li>
+<li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="http://plus.google.com/+amcharts/"><i class="fa fa-google-plus-square color-gray"></i> Google+</a></li>
+<li id="menu-item-4929" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4929"><a href="http://www.linkedin.com/company/amcharts"><i class="fa fa-linkedin-square color-gray"></i> LinkedIn</a></li>
+</ul></div></div> </div>
+<div class="col-5 col-md-4">
+<div><h3 class="family-black color-gray transform-uppercase">Resources</h3><div class="menu-footer-resources-container"><ul id="menu-footer-resources" class="menu"><li id="menu-item-3209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3209"><a href="http://www.amcharts.com/inspiration/">Inspiration Gallery</a></li>
+<li id="menu-item-2731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2731"><a href="http://www.amcharts.com/svg-maps/">Free SVG Maps</a></li>
+<li id="menu-item-3852" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3852"><a href="http://feeds.feedburner.com/amcharts">RSS feed of our blog</a></li>
+</ul></div></div> </div>
+<div class="col-5 col-md-4">
+<div><h3 class="family-black color-gray transform-uppercase">Contact Us</h3><div class="menu-footer-contact-container"><ul id="menu-footer-contact" class="menu"><li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a href="mailto:contact@amcharts.com">contact@amcharts.com</a></li>
+<li id="menu-item-2563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2563"><a href="http://www.amcharts.com/support/">Get Support</a></li>
+</ul></div></div> </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="app-fieldset text-center">
+<div class="app-fieldset-legend color-lightgray">Copyright © 2014, amcharts.com. All rights reserved.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="app-wave wave-light"></div>
+</div>
+</div>
+</div><iframe name="oauth2relay560703083" id="oauth2relay560703083" src="./Line With Custom Bullets demo   amCharts_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+<textarea id="code_html" class="hidden">&lt;div id="chartdiv"&gt;&lt;/div&gt;
+</textarea>
+<textarea id="code_js" class="hidden">var chart = AmCharts.makeChart("chartdiv", {
+    "type": "serial",
+    "pathToImages": "http://www.amcharts.com/lib/3/images/",
+    "addClassNames": true,
+    "dataProvider": [[data]],
+    "graphs": [{
+    	"bullet": "round",
+        "valueField": "value",
+        "fillAlphas": .3,
+        "lineColor": "#1d8b3a",
+        "negativeLineColor": "#8b1d1d"
+    },{
+    	"type": "column",
+        "valueField": "value",
+        "fillAlphas": .3,
+        "lineColor": "#1d8b3a",
+        "fillColors": "#1d8b3a",
+        "negativeLineColor": "#8b1d1d",
+        "negativeFillColors": "#8b1d1d"
+    }],
+    "chartCursor": {
+    	graphBulletSize: 1.5
+    },
+    "dataDateFormat": "YYYY-MM-DD",
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true
+    }
+});
+</textarea>
+<textarea id="code_css" class="hidden">#chartdiv {
+	width	: 100%;
+	height	: 500px;
+}
+.[[classname]] {
+    -webkit-animation: am-pulsate 1s infinite;
+    animation: am-pulsate 1s infinite;
+}
+</textarea>
+<script type="text/javascript">
+
+			 var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-22221037-1']);
+			_gaq.push(['_setDomainName', 'amcharts.com']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/codemirror.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/javascript.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/css.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/xml.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/htmlmixed.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/worldLow.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/continentsLow.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/usaLow.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/amexport.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/canvg.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/rgbcolor.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/filesaver.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/jspdf.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/jspdf.plugin.addimage.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/demo.js"></script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/browser-support.js"></script>
+ 
+<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 975661256;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+		</script>
+<script type="text/javascript" src="./Line With Custom Bullets demo   amCharts_files/conversion.js">
+		</script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Line With Custom Bullets demo   amCharts_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/975661256/?frame=0&amp;random=1426134554089&amp;cv=7&amp;fst=1426134554089&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=900&amp;u_w=1440&amp;u_ah=817&amp;u_aw=1440&amp;u_cd=24&amp;u_his=7&amp;u_tz=330&amp;u_java=true&amp;u_nplug=12&amp;u_nmime=44&amp;frm=0&amp;url=http%3A//www.amcharts.com/demos/line-with-custom-bullets/%23theme-none&amp;ref=http%3A//www.amcharts.com/demos/area-with-time-based-data/&amp;vis=1" /&gt;</iframe>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/975661256/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-4.newrelic.com","licenseKey":"2b927c5092","applicationID":"5849300","transactionName":"NABbZxNUWRAEWhcKWA1KbEEIGl4NAVwbTUcLFQ==","queueTime":0,"applicationTime":14,"atts":"GEdYEVtOSh4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script>
+
+ 
+ 
+ </body></html>

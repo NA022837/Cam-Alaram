@@ -1,0 +1,89 @@
+html
+  head
+    title Connect Works !
+    link(rel='shortcut icon', href='./../../public/images/favicon.ico', type='image/png')
+    
+    style(type='text/css').
+      .bs-example{
+      margin: 15px;
+      }
+      .connect{
+      font-family: monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 15px;
+      }
+      
+    link(rel='shortcut icon', href='./../../public/images/favicon.ico', type='image/png')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+
+    // CSS  
+    
+    link(href='https://cdn.datatables.net/tabletools/2.2.3/css/dataTables.tableTools.css', rel='stylesheet')
+    |                 
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+    |         
+    link(href='http://cdn.datatables.net/plug-ins/f2c75b7247b/integration/jqueryui/dataTables.jqueryui.css', rel='stylesheet')
+    |         
+    link(href='https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css', rel='stylesheet')
+    
+    link(href='https://datatables.net/release-datatables/extensions/ColVis/css/dataTables.colVis.css', rel='stylesheet')
+    
+    // JS
+    script(type='text/javascript', src='https://code.jquery.com/jquery-1.11.1.min.js')
+
+    script(type='https://datatables.net/release-datatables/media/js/jquery.js')
+    
+    script(type='https://datatables.net/release-datatables/media/js/jquery.dataTables.js')
+    |         
+    script(type='text/javascript', src='https://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js')
+    |         
+    script(type='text/javascript', src='https://cdn.datatables.net/tabletools/2.2.3/js/dataTables.tableTools.min.js')
+    |         
+    script(type='text/javascript', src='http://cdn.datatables.net/plug-ins/f2c75b7247b/integration/jqueryui/dataTables.jqueryui.js')
+    |     
+    script(type='text/javascript', src='https://datatables.net/release-datatables/extensions/ColVis/js/dataTables.colVis.js')
+    
+    script(type='text/javascript').
+      $(document).ready(function() {
+      $('#example').dataTable( {
+      "autoWidth": true,
+      "paging": true,
+      "dom": '<"clear">frtip',
+      "colVis": {
+      "buttonText": "Show/Hide Columns"
+      },
+      "aaData": !{(JSON.stringify(data))},
+      "aoColumns": [
+        { "mDataProp": "Param" },
+        { "mDataProp": "Occur" }
+      ],
+      "order": [[1, 'dsc']]
+      });
+      
+      });
+  |     
+  body.connect
+    .bs-example
+      nav.navbar.navbar-default
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+          a.brand(href='/searchAlarms/2', style='max-width:200px')
+            img(alt='Brand', src='./../../public/images/cerner-blue-large.png', style='max-width:150px')
+            
+      .container(class='@container-large-desktop')
+        .row.clearfix
+          .row
+            .col-sm-16.col-md-14
+              .thumbnail
+                table#example.table.table-bordered.table-hover(cellspacing='0', width='100%')
+                  thead()
+                    tr.info
+                      td
+                        i.fa.fa-file-text-o
+                        |   Parameter
+                      td
+                        i.fa.fa-list-ol
+                        |  Occurrence in last !{(JSON.stringify(data[0].Time))} hours

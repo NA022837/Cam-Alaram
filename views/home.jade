@@ -1,0 +1,106 @@
+html
+  head
+    meta(http-equiv='refresh', content='60')
+    title Connect Works !
+    |         
+    link(rel='shortcut icon', href='./../../public/images/favicon.ico', type='image/png')
+    
+    // Customized CSS
+    link(rel='shortcut icon', href='./../../public/stylesheets/style.css', type='image/png')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    
+  body
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.brand(href='/', style='max-width:200px')
+            img(alt='Brand', src='./../../public/images/cerner-blue-large.png', style='max-width:150px')
+    |         
+    |         
+    .container(class='@container-large-desktop')
+      .row.clearfix
+        .row
+          .col-sm-6.col-md-4
+            .thumbnail
+              .caption
+                span.glyphicon.glyphicon-tags(aria-hidden='true') 
+                h3 Last 2 hours data.
+                p
+                b Records Found: #{(JSON.stringify(data[0].count))}
+                |           
+                p
+                  a.btn.btn-default(href='/searchAlarms/2', role='button')
+                    | Load..  
+                    <i class="fa fa-refresh"></i>
+          |   
+          .col-sm-6.col-md-4
+            .thumbnail
+              .caption
+                span.glyphicon.glyphicon-tags(aria-hidden='true')
+                h3 Last 4 hours data.
+                p
+                b Records Found: #{(JSON.stringify(data[1].count))}
+                |           
+                p
+                  a.btn.btn-default(href='/searchAlarms/4', role='button')
+                    | Load..  
+                    span.glyphicon.glyphicon-download-alt(aria-hidden='true')
+          |   
+          .col-sm-6.col-md-4
+            .thumbnail
+              .caption
+                span.glyphicon.glyphicon-tags(aria-hidden='true')
+                h3 Last 6 hours data.
+                p
+                b Records Found: #{(JSON.stringify(data[2].count))}
+                |           
+                p
+                  a.btn.btn-default(href='/searchAlarms/6', role='button')
+                    | Load..  
+                    span.glyphicon.glyphicon-download-alt(aria-hidden='true')
+          |   
+          .col-sm-6.col-md-4
+            .thumbnail
+              .caption
+                span.glyphicon.glyphicon-tags(aria-hidden='true')
+                h3 Last 8 hours data.
+                p
+                b Records Found: #{(JSON.stringify(data[3].count))}
+                |           
+                p
+                  a.btn.btn-default(href='/searchAlarms/8', role='button')
+                    | Load..  
+                    span.glyphicon.glyphicon-download-alt(aria-hidden='true')
+          |   
+          .col-sm-6.col-md-4
+            .thumbnail
+              .caption
+                span.glyphicon.glyphicon-tags(aria-hidden='true')
+                h3 Last 12 hours data.
+                p
+                b Records Found: #{(JSON.stringify(data[4].count))}
+                |           
+                p
+                  a.btn.btn-default(href='/searchAlarms/12', role='button')
+                    | Load..  
+                    span.glyphicon.glyphicon-download-alt(aria-hidden='true')
+          |   
+          .col-sm-6.col-md-4
+            .thumbnail
+              .caption
+                span.glyphicon.glyphicon-tags(aria-hidden='true')
+                h3 Last 24 hours data.
+                p
+                b Records Found: #{(JSON.stringify(data[5].count))}
+                |           
+                p
+                  a.btn.btn-default(href='/searchAlarms/24', role='button')
+                    | Load..  
+                    span.glyphicon.glyphicon-download-alt(aria-hidden='true')
+      .alert.alert-info(role='alert') Page content Refreshes for every 60 sec
